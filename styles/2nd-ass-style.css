@@ -1,0 +1,476 @@
+/* Universal Style  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+/*utilities Style  */
+.primary-button {
+  background-color: #ff900e;
+  color: #fff;
+  padding: 32px 90px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main {
+  margin: 100px 130px;
+}
+
+
+
+/* Header section Style Start Here */
+.header-section {
+  padding: 50px 130px;
+  background-color: #fff4e7;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar .official-logo {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+  color: #131313;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+}
+.menu li {
+  list-style: none;
+}
+.menu li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #424242;
+  line-height: 26px;
+  font-weight: 500;
+}
+.brand-new-group-container {
+  padding: 100px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand-new-group-details {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brand-group-title {
+  text-align: center;
+  font-size: 58px;
+  color: #131313;
+  line-height: 60px;
+  font-weight: 700;
+}
+.brand-group-description {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  line-height: 26px;
+  margin: 30px 0;
+}
+.banner > img {
+  width: 100%;
+}
+
+
+
+/* team Section Style Start Here */
+
+.team-container {
+  display: flex;
+  gap: 50px;
+}
+.team-container > div {
+  width: 50%;
+}
+.team-container img {
+  width: 100%;
+}
+.team-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+.team-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.team-title {
+  font-size: 45px;
+  line-height: 53px;
+}
+.team-title .gray-col {
+  color: #a9a9a9;
+}
+.team-title .yellow-col {
+  color: #ff900e;
+}
+.team-description {
+  font-size: 16px;
+  color: #727272;
+  line-height: 26px;
+  margin: 24px 0 30px 0;
+}
+.team-information .primary-button {
+  padding: 25px 45px;
+}
+
+/* Love Section Start Here */
+.feature-products-section {
+  margin: 120px 0px;
+  display: flex;
+  gap: 50px;
+}
+.feature-products-section > div {
+  width: 50%;
+}
+.left-container {
+  padding-right: 30px;
+}
+.left-container .feature-products-title {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+  padding: 0 15px;
+  border-left: 3px solid #ff900e;
+}
+.left-container .description {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.feature-products {
+  box-shadow: 1px 1px 40px 1px #f2f2f2;
+  margin: 10px 0;
+  padding: 25px;
+}
+.feature-products .products-sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: #131313;
+}
+.sub-description {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #727272;
+}
+.right-container {
+  position: relative;
+  /* padding-bottom:200px; */
+}
+.right-container img {
+  width: 100%;
+}
+.experience-button{
+  position:relative;
+}
+.experience-button .primary-button {
+  padding: 32px 30px;
+}
+.experience-button .primary-button span {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* some-facts Section Start Here */
+.some-facts-container {
+  width: 50%;
+}
+.some-facts-title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 53px;
+  color: #131313;
+}
+.some-facts-description {
+  font-size: 16px;
+  margin-top: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #727272;
+}
+.card-items {
+  padding: 100px 20px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-column-gap: 50px;
+  position: relative;
+}
+.card-1 ,.card-2 ,.card-3,.card-4 {
+  border: 1px solid red;
+  padding: 35px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-1:hover ,.card-2:hover ,.card-3:hover,.card-4:hover {
+  border: 1px solid red;
+  padding: 35px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition:card transform 5s;
+  animation-name: card;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes card{
+  0%{
+    background-color: rgb(248, 215, 215);
+    transform: scale(0.6);
+     
+  }
+  33%{
+    background-color: rgb(240, 240, 192);
+    transform: scale(0.8);
+  }
+  66%{
+    background-color: rgb(181, 185, 184);
+    transform: scale(1);
+  }
+  99%{
+    background-color: rgb(214, 215, 216);
+    transform: scale(1.2);
+  }
+}
+
+.card-item h2 {
+  font-size: 45px;
+  color: #424242;
+  line-height: 53px;
+  font-weight: 600;
+  margin: 10px 0 5px 0;
+}
+.card-item p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #727272;
+}
+
+
+
+/*Sponsor Section Style Start Here */
+.sponsor-section{
+  padding: 100px 0 10px 0;
+}
+.sponsor-title,.sponsor-description{
+  text-align: center;
+}
+.sponsor-title {
+  font-size: 45px;
+  font-weight: 700;
+  color: #131313;
+}
+.sponsor-description {
+  margin: 12px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  line-height: 26px;
+}
+.all-brand-items {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+
+/* Footer Section Start Here */
+.footer-section {
+  margin: 0px 130px 0 130px;
+}
+.footer-container {
+  height: 100px;
+  background-color: #fff4e7;
+}
+.copyright {
+  position: relative;
+  top: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #424242;
+}
+/* blog section styles */
+.blog-section{
+ padding:60px 10px;
+ background-color: beige;
+ border-radius: 10px;
+}
+.blog-section h1{
+  font-weight:800;
+  text-align:center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  
+}
+.blog-container{
+  justify-content: center;
+  display:flex;
+  flex:1;
+  gap:20px;
+
+
+}
+
+.blogs{ 
+  background-color:aqua;
+  border-radius: 20px;
+  height: 200px;
+  padding: 20px 20px;
+}
+.blog-title{
+  font-weight:700;
+  font-size:25px ;
+  margin-bottom: 10px;
+}
+
+
+
+/*Mobile Device Responsive*/
+@media only screen and (max-width: 576px) {
+  /* common  */
+  main {
+    margin: 50px 20px;
+  }
+  /* Header Section */
+  .header-section {
+    padding: 20px 20px;
+  }
+  .menu,
+  .nav-bar {
+    flex-direction: column;
+  }
+  .nav-bar {
+    gap: 20px;
+  }
+  .nav-bar .official-logo {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .brand-new-group-details {
+    width: 95%;
+  }
+  .brand-group-title {
+    font-size: 35px;
+    line-height: 39px;
+  }
+  .brand-group-description {
+    line-height: 25px;
+    margin: 15px 0;
+  }
+  .right-container .experience-button{
+    margin-left: 35px;
+  }
+  .primary-button {
+    padding: 25px 55px;
+  }
+  /* team Section responsive */
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-container > div {
+    width: 90%;
+  }
+  .team-images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-title {
+    font-size: 38px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .team-description {
+    text-align: center;
+    font-size: 15px;
+  }
+  .feature-button {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  /* feature-products-section */
+  .feature-products-section {
+    flex-direction: column;
+  }
+  .feature-products-section > div {
+    width: 100%;
+  }
+  .left-container {
+    padding-right: 20px;
+  }
+
+  /* some-facts Section */
+  .some-facts-container {
+    width: 100%;
+  }
+  .some-facts-title,
+  .fact-description {
+    text-align: center;
+  }
+  .card-items {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 45px 20px 20px 20px;
+    grid-row-gap: 40px;
+  }
+  .card-1 ,.card-2 ,.card-3,.card-4 {
+    padding: 45px 45px;
+  }
+  /* sponsor Section */
+  .all-brand-items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 35px;
+  }
+  /* Footer Section */
+  .footer-section {
+    margin: 0;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  /* blog section style */
+  .blog-section{
+    margin:0;
+  }
+  .blog-container{
+    flex-direction:column;
+    margin:0;
+    padding:5px;
+    
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .experience-button {
+    position: absolute;
+    left: -50px;
+    bottom: 20px;
+
+  }
+}
